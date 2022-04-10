@@ -30,7 +30,8 @@ printf("%i is zero\n", n);
 }
 
 else if (n<0)
-{printf("%i is negative\n", n);
+{
+printf("%i is negative\n", n);
 }
 
 else
@@ -50,7 +51,7 @@ if (n > 1)
  else
 
    printf("%d is zero\n", n);
-
+ 
    return (0);
 }
 >>>>>>> 2e4dab8c327a086acdabb76f9423be9566d3cdd9
