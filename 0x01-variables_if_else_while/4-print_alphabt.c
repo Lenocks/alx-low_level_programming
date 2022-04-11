@@ -18,7 +18,10 @@ continue;
 else if (alphabet == 'e')
 continue;
 
-putchar ('\n');
+putchar(alphabet);
+}
+
+putchar('\n');
 
 return (0);
 
