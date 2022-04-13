@@ -22,30 +22,30 @@ void print_times_table(int n)
 				{
 					if (col != 0)
 					{
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(' ');
+						putchar(' ');
+						putchar(' ');
+						putchar(' ');
 					}
-					_putchar(mult + '0');
+					putchar(mult + '0');
 				}
 				else if (mult < 100)
 				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar((mult / 10) + '0');
-					_putchar((mult % 10) + '0');
+					putchar(' ');
+					putchar(' ');
+					putchar((mult / 10) + '0');
+					putchar((mult % 10) + '0');
 				}
 				else
 				{
-					_putchar(' ');
-					_putchar((mult / 100) + '0');
-					_putchar(((mult % 100) / 10) + '0');
-					_putchar((mult % 10) + '0');
+					putchar(' ');
+					putchar((mult / 100) + '0');
+					putchar(((mult % 100) / 10) + '0');
+					putchar((mult % 10) + '0');
 				}
 				if (col != n)
-					_putchar(',');
+					putchar(',');
 			}
-			_putchar('\n');
+			putchar('\n');
 		}
 	}
 }
