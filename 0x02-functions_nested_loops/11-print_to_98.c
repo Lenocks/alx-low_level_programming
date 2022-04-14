@@ -5,7 +5,7 @@
  * @n: input number to check
  * Return: nothing.
  */
-
+int_to_98
 void print_to_98(int n)
 {
 	if (n < 98)
