@@ -22,8 +22,10 @@ tot_sum += fibsum;
 
 fib1 = fib2;
 fib2 = fibsum;
-}
-printf("%.of\n", tot_sum);
 
-return (0)
+printf("%.f\n", tot_sum);
+
+
+return (0);
+}
 }
