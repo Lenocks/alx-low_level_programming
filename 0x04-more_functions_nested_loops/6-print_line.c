@@ -8,23 +8,27 @@
  */
 void print_line(int n)
 
-{
-int i;
+#include "holberton.h"
 
-if (n > 0)
-{
-for (i = 0; i < n; i++)
-{
-_putchar(95);
-}
-{
-_putchar ('\n');
-}
+/**
+ * print_line - function that draws a straight line in the terminal.
+ * @n: input value to check
+ * Return: nothing.
+ */
 
-else
+void print_line(int n)
 {
-_putchar ('\n');
-}
+	int i = 0;
 
-return (0);
+	while (i < n)
+	{
+		if (n > 0)
+		{
+			_putchar(95);
+			i += 1;
+		}
+		else
+			_putchar('\n');
+	}
+	_putchar('\n');
 }
