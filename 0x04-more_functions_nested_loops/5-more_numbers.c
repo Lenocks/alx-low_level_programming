@@ -1,29 +1,42 @@
 #include "main.h"
-
 /**
- * print_sign - return 0 letter not lowercase, 1 letter lowercase
+ * more_numbers - prints 10 times the numbers, from 0 to 14
  *
- *@n: the int to print
  * Return: Always 0.
  */
-int print_sign(int n)
-{
-if (n > 0)
-{
-_putchar ('+');
-return (1);
-}
 
-else if (n == 0)
+void more_numbers(void)
 {
-_putchar ('0');
-return (0);
+int i;
+int first_number;
+int second_number;
+int result;
+
+i = 0;
+result = 0;
+while (i < 10)
+{
+while (result <= 14)
+{
+if (result < 10)
+{
+second_number = result;
 }
 
 else
 {
-_putchar ('-');
-return (-1);
+first_number = result / 10;
+second_number = result % 10;
+_putchar (first_number + '0');
+}
+
+_putchar (second_number + '0');
+
+result++;
+}
+i++;
+result = 0;
+_putchar ('\n');
 }
 
 }
